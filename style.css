@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.6;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar .logo-img {
+  margin: 0 10px;
+  font-weight: 800;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar nav ul li {
+  padding: 0 5px;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar nav ul li a:hover {
+  border-bottom: #28a745 2px solid;
+}
+
+.holyster * {
+  z-index: 10;
+}
+
+.holyster {
+  background: url('./glacier.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.holyster::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
+}
+
+.holyster .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.holyster .content h1 {
+  color: #fff;
+}
+
+.holyster .content p {
+  color: #fff;
+  padding: 10px;
+  max-width: 600px;
+  margin: 10px 30px 10px;
+}
+
+.holyster .content .para-content {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.btn {
+  color: #333;
+  display: inline-block;
+  background: #fff;
+  padding: 5px 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
